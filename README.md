@@ -25,10 +25,32 @@
    so, my solution to this problem is 'time scheduling of resources'.
    Here, we will not fix 4000 for every part of the day. Rather, we will divide it into segments.
             
-   Morning Segment: Current Provisioning: 4000 
-                    Revised Provisioning: 5500
+   Midnight Segment: Current Provisioning: 4000 
+                     Revised Provisioning: 4707 (Avg of segment)* 
                     
-   ![Screenshot 2022-01-23 185354](https://user-images.githubusercontent.com/44380810/150680679-8492317a-2247-4feb-9013-24b33776a6b6.JPG)
-
+   Evening Segment: Current Provisioning: 4000 
+                    Revised Provisioning: 8323 (Avg of segment)
+                    
+   Morning Segment: Current Provisioning: 4000 
+                    Revised Provisioning: 4374 (Avg of segment)                   
+                    
+   Similarly, for underused segments the provisioning can be lowered based on its average.
+   * Assuming the Peak Load remains in the same range everyday
+   
+   For Ex - In 1st Row:
+   Initial Provisioning: 4000
+   Revised Provisioning: 4707
+   Assuming price for reserved Instance (X) is Re 1.
+   On Demand Cost based on IP: (6207-4000) * Rs 2 = Rs 4144 
+   On Demand Cost based on RP: (6207-4707) * Rs 2 = Rs 2730
+   
+   We can also take the Max value as the Revised provisioning value for a segment, but we don't know the exact value.
+   
+   This method pf scheduling Reserved Instances based on predictable workload is possible and is 20-30% cheaper than On demand Instances.
+   
+   
+   
+                    
+   
    
    
