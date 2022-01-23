@@ -17,12 +17,15 @@
    At all other instances, we have underusage of resources.
   
    
-2. From my observation, the missing timestamps infer 'ideal resource usage'. That is, during this time resources usage was approximately near to 4000. The listed timestamp shows abnomalies in resource usage either underusage/overusage.
+2. From my observation, the missing timestamps infer 'ideal resource usage'. That is, during this time resources usage was 
+approximately near to 4000. The listed timestamp shows abnomalies in resource usage either underusage/overusage.
 
-<br/>
 
 3. The current sum of total realtime load and sum of total alloted resources stands at 83178 & 88000 respectively.
-   It is evident that resources are underutilized with 4000 provisioning. If we go on increasing the resources by 100, 200, 300..etc we will widen the total gap. Not only this, we will also widen the gap where resources are underutilized in 4000 provisioning. For ex - In 11:52:56 , Computation capacity being used is 5 whereas provisioned load is 4000. So, Increasing the load for this timeframe will widen the gap even more.
+   It is evident that resources are underutilized with 4000 provisioning. If we go on increasing the resources by 100, 200, 
+   300..etc we will widen the total gap. Not only this, we will also widen the gap where resources are underutilized in 
+   4000 provisioning. For ex - In 11:52:56 , Computation capacity being used is 5 whereas provisioned load is 4000. 
+   So, Increasing the load for this timeframe will widen the gap even more.
 
 
    Based on the given data we see there is a pattern of compute usage, that is we have a predictable workload. 
